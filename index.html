@@ -3,161 +3,179 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        
         
         <style>
-            /* put your css styles here...*/
+            .unselected
+            {
+        
+                background-color: black;
+                border-color: white;
+                height: 4rem;
+            }
             
+            .selectedWrong
+            {
+                background-color: red;
+                border-color: white;
+                height: 4rem;
+            }
+            
+            .selectedTreasure
+            {
+                background-color: green;
+                border-color: white;
+                height: 4rem;
+            }
         </style>
     </head>
     
     <body>
         <div class="container">
-            <!--put your html code here...-->
-            <div class="jumbotron jumbotron-fluid">
-              <div class="container">
-                <h1 class="display-4">Massachusetts College of Liberal Arts</h1>
-                <p class="lead">In the Berkshires</p>
-              </div>
-            </div>
-            
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#">MCLA</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Admissions</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Acedemics</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Student Life</a>
-                  </li>
-                   <li class="nav-item">
-                    <a class="nav-link" href="#">Athletics</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Alumni</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
             
             
-            <ul class="list-group">
-              <li class="list-group-item">Support SVC</li>
-              <li class="list-group-item">Epic Diversity</li>
-              <li class="list-group-item">Exceptional Inclusivity</li>
-              <li class="list-group-item">80+ summer Classes</li>
-              <li class="list-group-item">MCLA Pittsfield</li>
-            </ul>
+            <h4>Treasure Hunt</h4>
+            <div class="row" id="boxList"></div>
+            <p id = "guess"></p>
             
-          
-            <button class="btn btn-primary" type="submit">Request Information</button>
             
-            <input class="form-control" type="text" placeholder="375 Church Street North Adams" readonly>
-            
-            <div class="modal-body">
-              <h5>See Yourself Here</h5>
-              <p><a href="#" class="tooltip-test" title="Tuesday, April 2nd">Graduate</a>_<a href="#" class="tooltip-test" title="6-7pm">Information</a></p>
-            </div>
-            
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                EXPLORE
-              </button>
-              <div class="dropdown-menu" aria-labelledby="EXPLORE">
-                <a class="dropdown-item" href="#">Graduate Program</a>
-                <a class="dropdown-item" href="#">UnderGraduate Program</a>
-                <a class="dropdown-item" href="#">Continuing Education</a>
-              </div>
-            </div>
-            
-            <div class="container">
-              <div class="row">
-                <div class="col-4">
-                    <div class="card">
-                      <div class="card-header">
-                        Welcome To MCLA
-                      </div>
-                      <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                          <p>
-                              MCLA is a liberal arts college in the beautiful Berkshires with a supportive, inclusive community, 80+ academic programs, hundreds of internship options, and hundreds of ways for you to shine.
-                          </p>
-                        </blockquote>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                      <div class="card-header">
-                        Southern Vermont College Transfers Students
-                      </div>
-                      <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                          <p>
-                              We at MCLA are saddened to hear of Southern Vermont College's closure. As SVC's preferred teach-out partner, MCLA is here to help and will allow all SVC students who are currently enrolled--or who were accepted to SVC for the fall 2019 semester--to transfer to MCLA.
-                           </p>
-                        </blockquote>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                  
-                  <div class="card">
-                      <div class="card-header">
-                        MCLA Announces New Certificate Programs in Accounting and Network Security
-                      </div>
-                      <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                          <p>
-                            Bringing new programs to the Berkshires and our new location in Pittsfield, two new certificate programs in accounting and network security will be available this fall. Classes for these 21-credit programs will be held at MCLA-Pittsfield, 66 Allen Street.
-                         </p>
-                        </blockquote>
-                      </div>
-                    </div>
-                </div>
-                
-                </div>
-                <div class="col-4">
-                   <div class="card">
-                      <div class="card-header">
-                        MCLA Tops List of Best Equity Campuses Across the U.S.
-                      </div>
-                      <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                          <p>
-                            A new report from USC’s Race and Equity Center has identified MCLA as one of the top public institutions nationally for serving black students well. According to Dr. Christopher MacDonald-Dennis, chief diversity officer, this recognition is a call to action and further impetus for infusing diversity, equity, and inclusion into everything we do
-                         </p>
-                        </blockquote>
-                      </div>
-                    </div>
-                </div>
-                  
-                </div>
-              </div>
-            </div>
-            
-
         </div>
-        
         
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>        
         
         <!--put your modal dialogs here...-->
+        <div id='playAgain' class="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-dark text-light">
+                <h5 class="modal-title">Play Again?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Would you like to play again?</p>
+              </div>
+              <div class="modal-footer">
+                <button id='yes' type="button" class="btn btn-primary">Yes</button>
+                <button id = 'no' type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+              </div>
+            </div>
+          </div>
+        </div>                
         
         <script>
         /* global $ */
-        // put your JavaScript code here...
+        $(document).ready(function() 
+        {
+            // model ....
+            let model = {};
+
+            function initializeModel()
+            {
+                model.guesses = 0;
+                model.cardSize = 12;
+                model.rand = Math.floor(Math.random() * model.cardSize);
+                
+                model.gameOver = false;
+                
+                model.cards = [];
+                
+                for(let i = 0; i < model.cardSize; i++)
+                {
+                    model.cards.push({"hasTreasure": model.rand == i, "flipped": false });
+                }
+
+            }
             
+            // view...
+            function updateView()
+            {
+                $('#boxList').empty(); 
+                console.log("Updating Boxes...");
+                for (let i = 0; i < model.cardSize; i++) 
+                {
+                    let item = $("<div></div>");
+                    item.attr("id", i);
+                    item.addClass("col-6");
+                    item.addClass("card");
+                    
+                    if(model.cards[i].flipped && model.cards[i].hasTreasure)
+                    {
+                        item.removeClass("unselected");
+                        item.addClass("selectedTreasure");
+                    }
+                    else if(model.cards[i].flipped && !model.cards[i].hasTreasure)
+                    {
+                        item.removeClass("unselected");
+                        item.addClass("selectedWrong");
+                    }
+                    else if(!model.cards[i].flipped)
+                        item.addClass("unselected");
+                        
+                    
+                    $('#boxList').append(item);
+                   
+                }
+                console.log("...Boxes added");
+                $('#guess').empty();
+                $('#guess').append("Guesses: ");
+                $('#guess').append(model.guesses);
+                
+                if(model.gameOver)
+                {
+                    $('#playAgain').modal('show');
+                    console.log("model Play Again Pop up");
+                }
+                    
+                
+                
+            }            
+            
+            $(document).on("click",".card",function() 
+            {
+                if(!model.gameOver)
+                {
+                    console.log("Box " + $(this).attr("id") + " Has been Clicked");
+                    model.guesses++;
+                    console.log("Guesses: " + model.guesses);
+                    
+                    if(model.cards[$(this).attr("id")].hasTreasure)
+                    {
+                        model.cards[$(this).attr("id")].flipped = true;
+                        console.log("treasure found");
+                        model.gameOver = true;
+                    }
+                    else
+                    {
+                        model.cards[$(this).attr("id")].flipped = true;
+                        console.log("404 no treasure found");
+                    }
+                    updateView();
+                }
+                else
+                    console.log("Game is over screen wont change");
+                
+
+            });
+            
+
+            $('#yes').click(function() 
+            {
+                $('#playAgain').modal('hide');
+                initializeModel();
+                updateView();
+            });
+            
+            $('#no').click(function() 
+            {
+                $('#playAgain').modal('hide');
+            });
+            
+            // run...
+            initializeModel();
+            updateView();
+        });
+        
         </script>
     </body>
-
 </html>
